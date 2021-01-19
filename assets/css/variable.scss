@@ -1,0 +1,17 @@
+@mixin para ($color, $weight, $size) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: 'Roboto', sans-serif;
+   
+
+}
+
+@mixin Header ($color, $weight, $size) {
+    font-size: $size;
+    color: $color;
+   
+    font-weight: $weight;
+    font-family: 'Roboto Slab', serif;
+
+}

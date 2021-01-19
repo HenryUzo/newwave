@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,qJAAI;AAEZ,OAAO,CAAC,iNAAI",
+    "sources": [
+        "constant.scss",
+        "variable.scss"
+    ],
+    "names": [],
+    "file": "constant.css"
+}

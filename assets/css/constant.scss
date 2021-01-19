@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');                                                                                                                                                        
+
+@import "./variable.scss";
+
+// sets
+
+$gl-ms : "screen and (max-width: 23.5em)"; // up to 360px
+$gl-xs : "screen and (max-width: 35.5em)"; // up to 568px
+$gl-sm : "screen and (max-width: 48em)"; // max 768px
+$gl-md : "screen and (max-width: 64em)"; // max 1024px
+$gl-lg : "screen and (max-width: 80em)"; // max 1280px
+
+// table style
+
+$firstClr: #D42E12;
+$secondClr:#2196F3;
+$textClr: #575757;
+$lightgray: #A1A1A1;
+$lightergray: #DCDCDC;
+$anothershadeofgray:#F4F7F9;
+$verylightgray: #F8F8F8;
+$lightpink:#FFD4D4;
+$lighterpink:#FFE8E8;
+$yellow:#ECFC0C;
+
+
+
+
