@@ -1,74 +1,59 @@
-/* reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-label {
-  cursor: pointer;
-}
-
-label:focus {
-  outline: none;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #fff;
-  width: 240px;
-  height: 100%;
-  -webkit-transform: translate3d(-240px, 0, 0);
-          transform: translate3d(-240px, 0, 0);
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  transition: transform 0.35s, -webkit-transform 0.35s;
-}
-
-label.menu-toggle {
+.styled-checkbox {
   position: absolute;
-  right: -60px;
-  width: 60px;
-  height: 60px;
-  line-height: 0px;
-  display: block;
+  opacity: 0;
+}
+
+.styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
   padding: 0;
-  text-indent: -9999px;
-  background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
 
-.small-ul li label {
-  background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
+.styled-checkbox + label:before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: #bbbbbb;
 }
 
-.small-ul li a, .small-ul li label {
-  display: block;
-  text-align: center;
-  padding: 0 20px;
-  line-height: 60px;
-  text-decoration: none;
-  color: #000;
+.styled-checkbox:hover + label:before {
+  background: #f35429;
 }
 
-.small-ul li a:hover, .small-ul li label:hover {
-  color: #666;
+.styled-checkbox:focus + label:before {
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
-/* hide inputs */
-.menu-checkbox {
-  display: none;
+.styled-checkbox:checked + label:before {
+  background: #f35429;
 }
 
-/* hide navigation icon for sublabels */
-.menu .menu label.menu-toggle {
-  background: none;
+.styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
 }
 
-/* fade in checked menu */
-.menu-checkbox:checked + .menu {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+.styled-checkbox:disabled + label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #ddd;
+}
+
+.styled-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=test.css.map */

@@ -3,15 +3,41 @@
     font-size: $size;
     font-weight: $weight;
     font-family: 'Roboto', sans-serif;
-   
+
 
 }
 
 @mixin Header ($color, $weight, $size) {
     font-size: $size;
     color: $color;
-   
+
     font-weight: $weight;
     font-family: 'Roboto Slab', serif;
+
+}
+
+@mixin inputform () {
+    margin-top: 30px;
+    border: none;
+
+
+    >span.input-group-addon {
+        height: 50px;
+        background-color: rgb(228, 228, 228);
+        border-radius: 0;
+        border: none;
+
+        >span.glyphicon {
+            color: $primaryColor;
+        }
+    }
+
+    >input.form-control {
+        height: 50px;
+        background-color: rgb(228, 228, 228);
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
 
 }
