@@ -1525,14 +1525,15 @@ iframe#youtube {
 }
 
 .background div.container.login-page .login-row .right-form .form-row .form-column h4 {
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 24px;
   font-weight: 700;
   color: white;
+  margin-bottom: 30px;
 }
 
 .background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email {
-  margin-top: 30px;
+  margin-top: 15px;
   border: none;
 }
 
@@ -1543,7 +1544,7 @@ iframe#youtube {
   border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon > span.glyphicon.glyphicon-user {
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon > span.glyphicon {
   color: #ff7c00;
 }
 
@@ -1568,7 +1569,7 @@ iframe#youtube {
   border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon > span.glyphicon.glyphicon-lock {
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon > span.glyphicon {
   color: #ff7c00;
 }
 

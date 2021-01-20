@@ -3004,14 +3004,15 @@ iframe#youtube {
 }
 
 .background div.container.login-page .login-row .right-form .form-row .form-column h4 {
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 24px;
   font-weight: 700;
   color: white;
+  margin-bottom: 30px;
 }
 
 .background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email {
-  margin-top: 30px;
+  margin-top: 15px;
   border: none;
 }
 
@@ -3022,7 +3023,7 @@ iframe#youtube {
   border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon > span.glyphicon.glyphicon-user {
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.email > span.input-group-addon > span.glyphicon {
   color: #ff7c00;
 }
 
@@ -3047,7 +3048,7 @@ iframe#youtube {
   border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon > span.glyphicon.glyphicon-lock {
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-12 > div.input-group.password > span.input-group-addon > span.glyphicon {
   color: #ff7c00;
 }
 
@@ -3199,23 +3200,30 @@ iframe#youtube {
   margin-left: 20px;
 }
 
+@media (max-width: 768px) {
+  .background div.container.login-page .login-row {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
+.background div.container.login-page .login-row .left-image > div.image {
+  height: 620px;
+}
+
 .background div.container.login-page .login-row .left-image > div.image > img {
-  width: 130%;
+  width: 160%;
 }
 
 .background div.container.login-page .login-row .right-form .form-row .form-column {
   padding: 5% 10%;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column h4 {
-  margin-top: 30px;
-  font-size: 24px;
-  font-weight: 700;
-  color: white;
-}
-
 .background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.first-name {
-  margin-top: 30px;
+  margin-top: 15px;
   border: none;
 }
 
@@ -3240,7 +3248,7 @@ iframe#youtube {
 }
 
 .background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.last-name {
-  margin-top: 30px;
+  margin-top: 15px;
   border: none;
 }
 
@@ -3264,142 +3272,103 @@ iframe#youtube {
           box-shadow: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me {
-  margin-top: 30px;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox {
-  position: absolute;
-  opacity: 0;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-  color: white;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox + label:before {
-  content: '';
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: #bbbbbb;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:hover + label:before {
-  background: #f35429;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:focus + label:before {
-  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
-          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:checked + label:before {
-  background: #f35429;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:disabled + label {
-  color: #b8b8b8;
-  cursor: auto;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:disabled + label:before {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: #ddd;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .remember-me .styled-checkbox:checked + label:after {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 9px;
-  background: white;
-  width: 2px;
-  height: 2px;
-  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass {
-  margin-top: 30px;
-  text-align: right;
-}
-
-@media (max-width: 500px) {
-  .background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass {
-    margin-top: 0;
-  }
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .forgot-pass a {
-  font-weight: 600;
-  color: #ff7c00;
-  text-decoration: underline;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .get-in {
-  margin-top: 20px;
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter {
-  font-size: 16px;
-  border-radius: 0;
-  padding: 15px 50px;
-  background-color: #ff7c00;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.email {
+  margin-top: 15px;
   border: none;
 }
 
-@media (max-width: 500px) {
-  .background div.container.login-page .login-row .right-form .form-row .form-column .get-in .enter {
-    display: block;
-  }
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.email > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column .get-in span {
-  margin-left: 50px;
-  color: white;
-}
-
-@media (max-width: 500px) {
-  .background div.container.login-page .login-row .right-form .form-row .form-column .get-in span {
-    display: block;
-    margin-left: 0;
-    margin-top: 30px;
-  }
-}
-
-.background div.container.login-page .login-row .right-form .form-row .form-column .get-in span a {
-  margin-left: 20px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.email > span.input-group-addon > span.glyphicon {
   color: #ff7c00;
-  text-decoration: underline;
-  font-weight: 600;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 {
-  margin-top: 30px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.email > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(1) {
-  color: white;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.username {
+  margin-top: 15px;
+  border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(2) {
-  margin-left: 40px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.username > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(3) {
-  margin-left: 20px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.username > span.input-group-addon > span.glyphicon {
+  color: #ff7c00;
 }
 
-.background div.container.login-page .login-row .right-form .form-row .form-column div.sign-in-options.col-12 > span:nth-of-type(4) {
-  margin-left: 20px;
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.username > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.password {
+  margin-top: 15px;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.password > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.password > span.input-group-addon > span.glyphicon {
+  color: #ff7c00;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.password > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.confirm-password {
+  margin-top: 15px;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.confirm-password > span.input-group-addon {
+  height: 50px;
+  background-color: #e4e4e4;
+  border-radius: 0;
+  border: none;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.confirm-password > span.input-group-addon > span.glyphicon {
+  color: #ff7c00;
+}
+
+.background div.container.login-page .login-row .right-form .form-row .form-column div.form-group.col-md-6 > div.input-group.confirm-password > input.form-control {
+  height: 50px;
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=register.css.map */

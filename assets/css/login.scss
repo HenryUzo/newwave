@@ -51,62 +51,22 @@
                         }
 
                         h4 {
-                            margin-top: 30px;
+                            margin-top: 15px;
                             font-size: 24px;
                             font-weight: 700;
                             color: white;
+                            margin-bottom: 30px;
                         }
 
                         div.form-group.col-12 {
                             >div.input-group.email {
-                                margin-top: 30px;
-                                border: none;
-
-
-                                >span.input-group-addon {
-                                    height: 50px;
-                                    background-color: rgb(228, 228, 228);
-                                    border-radius: 0;
-                                    border: none;
-
-                                    >span.glyphicon.glyphicon-user {
-                                        color: $primaryColor;
-                                    }
-                                }
-
-                                >input.form-control {
-                                    height: 50px;
-                                    background-color: rgb(228, 228, 228);
-                                    border: none;
-                                    border-radius: 0;
-                                    box-shadow: none;
-                                }
+                                @include inputform ()
                             }
                         }
 
                         div.form-group.col-12 {
                             >div.input-group.password {
-                                margin-top: 15px;
-                                border: none;
-
-                                >span.input-group-addon {
-                                    height: 50px;
-                                    background-color: rgb(228, 228, 228);
-                                    border-radius: 0;
-                                    border: none;
-
-                                    >span.glyphicon.glyphicon-lock {
-                                        color: $primaryColor;
-                                    }
-                                }
-
-                                >input.form-control {
-                                    height: 50px;
-                                    background-color: rgb(228, 228, 228);
-                                    border: none;
-                                    border-radius: 0;
-                                    box-shadow: none;
-                                }
+                                @include inputform ()
                             }
                         }
 
