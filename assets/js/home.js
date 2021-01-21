@@ -111,23 +111,6 @@ $(document).ready(function(){
 });
 
 
-// Attach file
-
-
-jQuery.noConflict();
-(function($){
-	//Changing the fake input text
-	var $fakeField = '.fake-field-file';
-	var $inputFile = $('.field-file');
-	
-	$inputFile.change(function(){
-		//If you'd rather, you can define other text here
-		//var $filename = 'Attached file';
-		var $filename = $('.field-file').val().split('\\').pop();
-		$(this).siblings($fakeField).empty().text($filename).css({'color':'#00a0d9', 'font-weight': '700'});
-	});
-	
-})(jQuery);
 
 
 
