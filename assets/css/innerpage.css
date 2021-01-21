@@ -31,10 +31,10 @@ label:focus {
   top: 0;
   left: 0;
   background: #313131;
-  width: 240px;
+  width: 300px;
   height: 100%;
-  -webkit-transform: translate3d(-240px, 0, 0);
-          transform: translate3d(-240px, 0, 0);
+  -webkit-transform: translate3d(-300px, 0, 0);
+          transform: translate3d(-300px, 0, 0);
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -56,7 +56,7 @@ label.menu-toggle {
   line-height: 0px;
   display: block;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 20px;
   text-indent: -9999px;
   background: #ff7c00 url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50%/25px 25px no-repeat;
 }
@@ -65,21 +65,27 @@ label.menu-toggle {
   padding-top: 30px;
 }
 
+.small-ul li:active {
+  background-color: #ff7c00;
+}
+
 .small-ul li label {
   background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50%/16px 16px no-repeat;
 }
 
-.small-ul li a, .small-ul li label {
+.small-ul li a,
+.small-ul li label {
   display: block;
-  text-align: center;
+  text-align: left;
   padding: 0 20px;
   line-height: 60px;
   text-decoration: none;
   color: white;
 }
 
-.small-ul li a:hover, .small-ul li label:hover {
-  color: #ff7c00;
+.small-ul li a:active,
+.small-ul li label:active {
+  color: #313131;
 }
 
 /* hide inputs */
@@ -96,10 +102,13 @@ label.menu-toggle {
 .menu-checkbox:checked + .menu {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 13px 1px 25px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 13px 1px 25px 0px rgba(0, 0, 0, 0.55);
 }
 
 .logo-orange {
   display: none;
+  background-color: #313131;
 }
 
 @media (max-width: 1159px) {
@@ -159,13 +168,49 @@ label.menu-toggle {
   text-transform: uppercase;
 }
 
+.big-menu .second-menu .moretopics .dropdown-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+.big-menu .second-menu .moretopics .dropdown-button:hover {
+  color: #ff7c00;
+}
+
+.big-menu .second-menu .moretopics .dropdown-button::after {
+  border-color: white transparent transparent transparent;
+}
+
+.big-menu .second-menu .moretopics .dropdown-button::after:hover {
+  border-color: #ff7c00 transparent transparent transparent;
+}
+
+.big-menu .second-menu .moretopics .menu-options {
+  background-color: #ff7c00;
+}
+
+.big-menu .second-menu .moretopics .menu-options a {
+  color: white;
+}
+
+.big-menu .second-menu .moretopics .menu-options a:hover {
+  background-color: #313131;
+}
+
+.big-menu .second-menu .moretopics .menu-options a:active {
+  background-color: #313131;
+}
+
 .first-section {
   margin-top: 60px;
 }
 
 @media (max-width: 1159px) {
   .first-section {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -1487,6 +1532,10 @@ body {
 
 .container-fluid {
   padding: 0;
+}
+
+.topic-section {
+  margin-top: 34px;
 }
 
 .topic-section > div.container > div.row.topic > div.heading.col-12.text-center {

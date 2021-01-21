@@ -1,0 +1,119 @@
+@import "./home";
+@import "./variable";
+
+div.theEyeWitness.container {
+    margin-bottom: 70px;
+    margin-top: 20px;
+    max-width: 800px;
+
+    @media (max-width: 500px) {
+        max-width: 300px;
+    }
+
+    >div.row {
+        >div.col-12.mt-5.header {
+            >h3 {
+                font-weight: 600;
+            }
+        }
+
+        >form.row.input-row {
+            margin-top: 30px;
+
+            >div.form-group.col-12:nth-of-type(1) {
+                margin: 0;
+                padding: 0;
+
+                >div.input-group.name {
+                    >input.form-control {
+                        @include formInput()
+                    }
+                }
+            }
+
+            >div.form-group.col-12:nth-of-type(2) {
+                margin: 0;
+                padding: 0;
+
+                >div.input-group.subject {
+                    >input.form-control {
+                        @include formInput()
+                    }
+                }
+            }
+
+            >div.form-group.col-12:nth-of-type(3) {
+                margin: 0;
+                padding: 0;
+
+                >div.input-group.email {
+                    >input.form-control {
+                        @include formInput()
+                    }
+                }
+            }
+
+            >textarea#story-teller {
+                margin-top: 15px;
+                width: 100%;
+                    height: 150px;
+                    line-height: 150%;
+                    resize: vertical;
+                    padding: 20px 20px;
+            }
+            h5.col-12 {margin-top: 40px;}
+
+            >div.form-field-file.row.col-12 {
+                margin-top: 15px;
+                text-align: left;
+
+                
+                //Hiding the input file
+                .field-file {
+                    display: none
+                }
+
+                //File button
+                .btn1 {
+                 
+                    font-size: 16px;
+                    border-radius: 0;
+                    padding: 15px 50px;
+                    background-color: $secondaryColor;
+                    border: none;
+                    cursor: pointer;
+                    height: 60px;
+                    color: #FFF;
+
+                    &:hover {
+                        background: darken(#00a0d9, 13%);
+                        color: #FFF;
+                    }
+                }
+
+                //Fake input file
+                .fake-field-file {
+                 
+                    width: 70%;
+                    border: 1px solid #CCC;
+                padding: 15px 25px;
+                height: 60px;
+                    border-radius: 0;
+                }
+
+                >p {}
+            }
+
+            >div.col-12.get-in {
+                >button.btn.btn-success.btn-lg.enter {
+                    margin-top: 30px;
+                    font-size: 16px;
+                    border-radius: 0;
+                    padding: 15px 50px;
+                    background-color: $primaryColor;
+                    border: none;
+                }
+            }
+        }
+    }
+}

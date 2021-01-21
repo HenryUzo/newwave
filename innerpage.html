@@ -30,9 +30,9 @@
 
 <body>
 
-    <div class="container text-center logo-orange">
-        <div class="image">
-            <img src="./assets/img/Ase.png" alt="">
+    <div class="container-fluid text-center logo-orange">
+        <div class="image py-4">
+            <img src="./assets/img/logo.svg" alt="">
         </div>
     </div>
     <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
@@ -40,72 +40,91 @@
       <label class="menu-toggle" for="menu"><span>Toggle</span></label>
       <ul class="small-ul">
         <li>
-          <a href="#">News</a>
+          <a href="index.html"><span class="mx-4"><img src="./assets/img/news.svg" alt=""></span>News</a>
         </li>
         <li>
-          <a href="#">Opinions</a>
+          <a href="/opinion.html"><span class="mx-4"><img src="./assets/img/iconfinder_Star_Rating_Opinion_Mark_Favorite_1654367.svg" alt=""></span>Opinions</a>
         </li>
         <li>
-            <a href="#">Politics</a>
+            <a href="/politics.html"><span class="mx-4"><img src="./assets/img/iconfinder_Artboard_20_5740113.svg" alt=""></span>Politics</a>
           </li>
           <li>
-            <a href="#">Health</a>
+            <a href="/health.html"><span class="mx-4"><img src="./assets/img/health.svg" alt=""></span>Health</a>
           </li>
           <li>
-            <a href="#">Sports</a>
+            <a href="/sports.html"><span class="mx-4"><img src="./assets/img/sport.svg" alt=""></span>Sports</a>
           </li>
           <li>
-            <a href="#">STOCK WATCH</a>
+            <a href="/business.html"><span class="mx-4"><img src="./assets/img/business.svg" alt=""></span>Business</a>
           </li>
        
        
           
         <li>
-          <label for="menu-5">More Topics</label>
+          <label for="menu-5"><span class="mx-4"><img src="./assets/img/more.svg" alt=""></span>More Topics</label>
           <input type="checkbox" id="menu-5" name="menu-5" class="menu-checkbox">
           <div class="menu">
             <label class="menu-toggle" for="menu-5"><span>Toggle</span></label>
             <ul>
-              <li>
-                <a href="#">More Topics 1</a>
+              <li class="mt-5">
+                <a href="/column.html"><span class="mx-4"><img src="./assets/img/column.svg" alt=""></span>Columns</a>
               </li>
               <li>
-                <a href="#">More Topics 2</a>
+                <a href="./entertainment.html"><span class="mx-4"><img src="./assets/img/iconfinder_entertainment_465053.svg" alt=""></span>Entertainment</a>
               </li>
-              <li>
-                <a href="#">More Topics 3</a>
-              </li>
-              <li>
-                <a href="#">More Topics 4</a>
-              </li>
+         
             </ul>
           </div>
         </li>
+
+        <li>
+            <a href="#"><span class="mx-4"><img src="./assets/img/covid.svg" alt=""></span>Covid 19 Latest Updates</a>
+          </li>
+
+          <li>
+            <a href="/sell-column.html"><span class="mx-4"><img src="./assets/img/sell.svg" alt=""></span>Sell a Column</a>
+          </li>
+
+          <li>
+            <a href="/eye-witness.html"><span class="mx-4"><img src="./assets/img/witness.svg" alt=""></span>Eye Witness Report</a>
+          </li>
+
+          <li>
+            <a href="/login.html"><span class="mx-4"><img src="./assets/img/login_account_enter_door.svg" alt=""></span>Login</a>
+          </li>
+
       
       </ul>
     </div>
-
-
-
-    <div class="container menu ">
-
+    <div class="container big-menu ">
+        
         <nav class="row">
             <div class="col-5"></div>
-            <ul class="col-6 row first-menu">
+            <ul class="col-7 row first-menu">
                 <li class=""><a href="#">Covid 19 Latest Updates</a></li>
-                <li><a href="#">Sell a Column</a></li>
-                <li><a href="#">Share a Story</a></li>
-                <li><a href="#">Login <img src="./assets/img/1.svg" alt=""></a></li>
+                <li><a href="/sell-column.html">Sell a Column</a></li>
+                <li><a href="/eye-witness.html">Eye Witness Report</a></li>
+                <li><a href="/login.html">Login <img src="./assets/img/1.svg" alt=""></a></li>
             </ul>
             <ul class="second-menu row col-12 my-auto text-center">
-                <li><a href="#" class="logo col-3"><img src="./assets/img/logo.svg" alt=""></a></li>
-                <li class="active my-auto"><a href="#">News</a> </li>
-                <li class="my-auto"> <a href="#">Opinions</a></li>
-                <li class="my-auto"><a href="#">Politicss</a> </li>
-                <li class="my-auto"><a href="#">Health</a></li>
-                <li class="my-auto"><a href="#">Sports</a></li>
-                <li class="my-auto"><a href="#">STOCK WATCH</a></li>
-                <li class="my-auto"><a href="#">More Topics</a></li>
+                <li><a href="/index.html" class="logo col-3"><img src="./assets/img/logo.svg" alt=""></a></li>
+                <li class="active my-auto"><a href="/index.html">News</a> </li>
+                <li class="my-auto"> <a href="/opinion.html">Opinions</a></li>
+                <li class="my-auto"><a href="/politics.html">Politics</a> </li>
+                <li class="my-auto"><a href="/health.html">Health</a></li>
+                <li class="my-auto"><a href="/sports.html">Sports</a></li>
+                <li class="my-auto"><a href="/business.html">Business</a></li>
+                <div class="dropdown my-auto moretopics">
+                    <button class="btn btn-secondary dropdown-toggle text-uppercase dropdown-button" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <div class="dropdown-menu menu-options" aria-labelledby="dropdownMenu2">
+                      <a class="dropdown-item" href="/column.html" type="button" >Columns</a>
+                      <a class="dropdown-item" href="/entertainment.html" type="button">Entertainment</a>
+                    
+                    </div>
+                  </div>
+                
             </ul>
         </nav>
     </div>
@@ -475,22 +494,22 @@
                     <div class="col-md-4 quick-link">
                         <h6 class="text-uppercase">Quick Links</h6>
                         <ul>
-                            <li class="mt-4"><a href="#" class="text-uppercase ">HOME</a></li>
-                            <li class="mt-2"><a href="#" class="text-uppercase">Sell a Column</a></li>
-                            <li class="mt-2"><a href="#" class="text-uppercase">Share a Story</a></li>
-                            <li class="mt-2"><a href="#" class="text-uppercase">Covid-19 Updates</a></li>
+                            <li class="mt-4"><a href="/index.html" class="text-uppercase ">HOME</a></li>
+                            <li class="mt-2"><a href="/sell-column.html" class="text-uppercase">Sell a Column</a></li>
+                            <li class="mt-2"><a href="/eye-witness.html" class="text-uppercase">Eye Witness Report</a></li>
+                            <li class="mt-2"><a href="/column.html" class="text-uppercase">Columns</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h6 class="text-uppercase">Contact Us</h6>
 
                         <div class="row mt-4">
-                            <div class="col-1 pr-5">
+                            <div class="col-1">
                                 <div class="image">
                                     <img src="./assets/img/Icon-metro-location.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-9 ">
+                            <div class="col-10 ">
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
                                     praising pain was born.</p>
                             </div>
@@ -501,7 +520,7 @@
                                     <img src="./assets/img/Icon-feather-phone.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-10">
                                 <p>+234 905 599 65903</p>
                             </div>
                         </div>
@@ -511,7 +530,7 @@
                                     <img src="./assets/img/Icon-feather-mail.svg" alt="">
                                 </div>
                             </div>
-                            <div class="col-9">
+                            <div class="col-10">
                                 <p>info@newwave.com</p>
                             </div>
                         </div>

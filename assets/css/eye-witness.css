@@ -245,7 +245,7 @@ label.menu-toggle {
   background: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(33%, rgba(0, 0, 0, 0.893995)), color-stop(57%, rgba(0, 0, 0, 0.638393)), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.893995) 33%, rgba(0, 0, 0, 0.638393) 57%, rgba(0, 0, 0, 0) 100%);
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   margin-bottom: 30px;
 }
 
@@ -329,7 +329,7 @@ label.menu-toggle {
 
 @media (max-width: 769px) {
   .first-section .slider .banner .slides .slides-option .gradient {
-    height: 70vh;
+    height: 60vh;
     left: 0;
   }
 }
@@ -501,7 +501,7 @@ label.menu-toggle {
 
 @media (max-width: 769px) {
   .first-section .slider .banner .slides .slides-option .slide-image {
-    height: 70vh;
+    height: 60vh;
   }
 }
 
@@ -1520,4 +1520,121 @@ iframe#youtube {
   transform: translate(0%, 0%);
   -webkit-transform: translate(0%, 0%);
 }
-/*# sourceMappingURL=home.css.map */
+
+div.theEyeWitness.container {
+  margin-bottom: 70px;
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+@media (max-width: 500px) {
+  div.theEyeWitness.container {
+    max-width: 300px;
+  }
+}
+
+div.theEyeWitness.container > div.row > div.col-12.mt-5.header > h3 {
+  font-weight: 600;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row {
+  margin-top: 30px;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-group.col-12:nth-of-type(1) {
+  margin: 0;
+  padding: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-group.col-12:nth-of-type(1) > div.input-group.name > input.form-control {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #CCC;
+  padding: 15px 25px;
+  height: 60px;
+  border-radius: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-group.col-12:nth-of-type(2) {
+  margin: 0;
+  padding: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-group.col-12:nth-of-type(2) > div.input-group.subject > input.form-control {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #CCC;
+  padding: 15px 25px;
+  height: 60px;
+  border-radius: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-group.col-12:nth-of-type(3) {
+  margin: 0;
+  padding: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-group.col-12:nth-of-type(3) > div.input-group.email > input.form-control {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #CCC;
+  padding: 15px 25px;
+  height: 60px;
+  border-radius: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > textarea#story-teller {
+  margin-top: 15px;
+  width: 100%;
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+  padding: 20px 20px;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row h5.col-12 {
+  margin-top: 40px;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-field-file.row.col-12 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-field-file.row.col-12 .field-file {
+  display: none;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-field-file.row.col-12 .btn1 {
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 50px;
+  background-color: #313131;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  color: #FFF;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-field-file.row.col-12 .btn1:hover {
+  background: #006f97;
+  color: #FFF;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.form-field-file.row.col-12 .fake-field-file {
+  width: 70%;
+  border: 1px solid #CCC;
+  padding: 15px 25px;
+  height: 60px;
+  border-radius: 0;
+}
+
+div.theEyeWitness.container > div.row > form.row.input-row > div.col-12.get-in > button.btn.btn-success.btn-lg.enter {
+  margin-top: 30px;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 15px 50px;
+  background-color: #ff7c00;
+  border: none;
+}
+/*# sourceMappingURL=eye-witness.css.map */

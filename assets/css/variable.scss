@@ -41,3 +41,12 @@
     }
 
 }
+
+@mixin formInput (){
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid #CCC;
+padding: 15px 25px;
+height: 60px;
+    border-radius: 0;
+}
